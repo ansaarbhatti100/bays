@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">Beqo Sports Clone - Premium Sportswear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> contact@beqosports.com</span>
+                <span><i class="fas fa-phone-alt"></i> +92 309 8827409</span>
+            </div>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <select id="lang-switch">
+                    <option value="en">English</option>
+                    <option value="ur">اردو (Urdu)</option>
+                    <option value="ar">العربية (Arabic)</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <h1 data-i18n="logo_text">BEQO SPORTS</h1>
+            </a>
+            <nav class="nav-menu">
+                <ul id="nav-list">
+                    <li><a href="#" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#products" data-i18n="nav_sports">Sports Wear</a></li>
+                    <li><a href="#products" data-i18n="nav_active">Active Wear</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#quote" class="btn btn-primary" data-i18n="btn_quote">Get Quote</a>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="hero_heading">Premium Sportswear and Apparel Manufacturer</h1>
+                <p data-i18n="hero_subheading">Custom designs, private labels, and high-quality gear for professionals.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary" data-i18n="btn_explore">Explore Products</a>
+                    <a href="#about" class="btn btn-outline" data-i18n="btn_learn">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="hero-form-box" id="quote">
+                <h3 data-i18n="form_title">Request a Quote</h3>
+                <form id="quote-form">
+                    <input type="text" id="form_name" data-i18n-placeholder="form_name" placeholder="Full Name" required>
+                    <input type="email" id="form_email" data-i18n-placeholder="form_email" placeholder="Email Address" required>
+                    <input type="text" id="form_product" data-i18n-placeholder="form_product" placeholder="Product Name" required>
+                    <input type="number" id="form_qty" data-i18n-placeholder="form_qty" placeholder="Quantity" required>
+                    <textarea id="form_msg" data-i18n-placeholder="form_msg" placeholder="Message / Specific Requirements"></textarea>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="btn_submit">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Categories Section -->
+    <section id="products" class="products-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="section_products">Our Core Categories</h2>
+                <p data-i18n="section_products_desc">Explore our wide range of custom sportswear and accessories.</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Category 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop" alt="Sports Wear">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="cat_sports">Sports Wear</h3>
+                        <p data-i18n="cat_sports_desc">Soccer, Basketball, American Football Uniforms</p>
+                        <a href="#" class="view-more" data-i18n="btn_view">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Category 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2070&auto=format&fit=crop" alt="Active Wear">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="cat_active">Active Wear</h3>
+                        <p data-i18n="cat_active_desc">Hoodies, T-Shirts, Tracksuits for peak performance</p>
+                        <a href="#" class="view-more" data-i18n="btn_view">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Category 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1555597734-780c1dfd3fdf?q=80&w=1964&auto=format&fit=crop" alt="Combat Sports">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="cat_combat">Combat Sports</h3>
+                        <p data-i18n="cat_combat_desc">MMA Gear, Boxing Gloves, and fight wear</p>
+                        <a href="#" class="view-more" data-i18n="btn_view">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Category 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Accessories">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="cat_equip">Sports Equipment</h3>
+                        <p data-i18n="cat_equip_desc">Bags, Gloves, Protective Gear</p>
+                        <a href="#" class="view-more" data-i18n="btn_view">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 data-i18n="footer_about">About Beqo</h3>
+                <p data-i18n="footer_about_desc">We are a premium manufacturing company dedicated to providing high-quality custom apparel for teams and brands globally.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_links">Quick Links</h3>
+                <ul>
+                    <li><a href="#" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#products" data-i18n="nav_sports">Sports Wear</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_contact">Contact Info</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">Sialkot, Punjab, Pakistan</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>+92 309 8827409</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>contact@beqosports.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer_copyright">&copy; 2026 Beqo Sports Clone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
